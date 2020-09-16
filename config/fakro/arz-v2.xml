@@ -1,7 +1,7 @@
 <Product Revision="1" xmlns="https://github.com/OpenZWave/open-zwave">
   <MetaData>
     <MetaDataItem name="Name">ARZ Z-Wave Roller Shutter</MetaDataItem>
-    <MetaDataItem name="Description"><!-- Short Description of the Product --></MetaDataItem>
+    <MetaDataItem name="Description">Lorem ipsum</MetaDataItem>
     <MetaDataItem name="OzwInfoPage">http://www.openzwave.com/device-database/XXXX:YYYY:ZZZZ</MetaDataItem>
     <MetaDataItem name="ProductPage">https://www.fakro.com/roof-windows/accessories-for-roof-windows/external/roller-shutter-arz/</MetaDataItem>
     <MetaDataItem name="ProductSupport">https://www.fakro.com/service/user-manuals/</MetaDataItem>
