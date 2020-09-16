@@ -6,7 +6,7 @@
     <MetaDataItem name="ProductPage">https://www.fakro.com/roof-windows/accessories-for-roof-windows/external/roller-shutter-arz/</MetaDataItem>
     <MetaDataItem name="ProductSupport">https://www.fakro.com/service/user-manuals/</MetaDataItem>
     <MetaDataItem name="ProductPic">images/fakro/arz.png</MetaDataItem>
-    <MetaDataItem name="ProductManual">https://products.z-wavealliance.org/ProductManual/File?folder=&filename=MarketCertificationFiles/2571/170307%20ARZ%20Z-WAVE%20User%20Manual.pdf</MetaDataItem>
+    <MetaDataItem name="ProductManual">https://products.z-wavealliance.org/ProductManual/File?folder=&amp;filename=MarketCertificationFiles/2571/170307%20ARZ%20Z-WAVE%20User%20Manual.pdf</MetaDataItem>
     <MetaDataItem name="WakeupDescription">Not applicable</MetaDataItem>
     <MetaDataItem name="InclusionDescription">This function allow you to add roller shutter to the network ZWave. Follow the procedur adding device to the network Z-Wave according to user manual supplied with the product. Then, press the programming button P on the roller shutter for 1 second.</MetaDataItem>
     <MetaDataItem name="ExclusionDescription">This function allow you to remove roller shutter from the network Z-Wave. Follow the procedur removing device from the network Z-Wave according to user manual supplied with the product. Then, press the programming button P on the roller shutter for 1 second. Function removes information only about newtork Z-Wave.</MetaDataItem>
