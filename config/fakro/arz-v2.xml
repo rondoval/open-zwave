@@ -1,16 +1,49 @@
 <Product Revision="1" xmlns="https://github.com/OpenZWave/open-zwave">
   <MetaData>
-    <MetaDataItem name="OzwInfoPage">http://www.openzwave.com/device-database/0085:0002:0002</MetaDataItem>
+    <MetaDataItem name="Name">ARZ Z-Wave Roller Shutter</MetaDataItem>
+    <MetaDataItem name="Description"><!-- Short Description of the Product --></MetaDataItem>
+    <MetaDataItem name="OzwInfoPage">http://www.openzwave.com/device-database/XXXX:YYYY:ZZZZ</MetaDataItem>
+    <MetaDataItem name="ProductPage">https://www.fakro.com/roof-windows/accessories-for-roof-windows/external/roller-shutter-arz/</MetaDataItem>
+    <MetaDataItem name="ProductSupport">https://www.fakro.com/service/user-manuals/</MetaDataItem>
     <MetaDataItem name="ProductPic">images/fakro/arz.png</MetaDataItem>
-    <MetaDataItem id="0002" name="ZWProductPage" type="0002">https://products.z-wavealliance.org/products/677/</MetaDataItem>
+    <MetaDataItem name="ProductManual">https://products.z-wavealliance.org/ProductManual/File?folder=&filename=MarketCertificationFiles/2571/170307%20ARZ%20Z-WAVE%20User%20Manual.pdf</MetaDataItem>
+    <MetaDataItem name="WakeupDescription">Not applicable</MetaDataItem>
+    <MetaDataItem name="InclusionDescription">This function allow you to add roller shutter to the network ZWave. Follow the procedur adding device to the network Z-Wave according to user manual supplied with the product. Then, press the programming button P on the roller shutter for 1 second.</MetaDataItem>
+    <MetaDataItem name="ExclusionDescription">This function allow you to remove roller shutter from the network Z-Wave. Follow the procedur removing device from the network Z-Wave according to user manual supplied with the product. Then, press the programming button P on the roller shutter for 1 second. Function removes information only about newtork Z-Wave.</MetaDataItem>
+    <MetaDataItem name="ResetDescription">Press 5 times the programming button P fast, the roller shutter was removed from the Z-Wave network, restore the default parameters, name and locations. Please use this procedure only when the network primary controller is missing or otherwise inoperable.</MetaDataItem>
+    <MetaDataItem id="0011" name="ZWProductPage" type="0003">https://products.z-wavealliance.org/Products/2571/</MetaDataItem>
+    <MetaDataItem id="0011" name="FrequencyName" type="0003">CEPT (Europe)</MetaDataItem>
+    <MetaDataItem id="0011" name="Identifier" type="0003">ARZ Z-Wave</MetaDataItem>
+
+    <MetaDataItem name="OzwInfoPage">http://www.openzwave.com/device-database/0085:0002:0002</MetaDataItem>
     <MetaDataItem name="ProductPage">http://www.fakro.com/htmlen/379.php</MetaDataItem>
     <MetaDataItem name="Description">The ARZ Z-Wave external roller shutters, powered by 12VDC, have been adapted for wireless cooperation with the Z-Wave system. The shutter is designed for FAKRO roof windows and its installation is possible at any time after roof window installation. It is also possible to use the shutter for roof windows of other manufactures. Installed on the outside of the window, the roller shutter constitutes an optimum solution against overheating and provides additional protection of the window e.g. against falling tree branches etc. The roller shutter enables complete blackout and good sound reduction. It is also good protection from glazing excessive cooling during the winter. The roller shutter also means increased security. It has built-in overload protection and can be controlled by using standard Z-Wave controller.</MetaDataItem>
-    <MetaDataItem name="Name">ARZ Z-Wave Roof Window Roller Shutter</MetaDataItem>
-    <MetaDataItem id="0002" name="Identifier" type="0002">ARZ </MetaDataItem>
-    <MetaDataItem id="0002" name="FrequencyName" type="0002">CEPT (Europe)</MetaDataItem>
     <ChangeLog>
-      <Entry author="Justin Hammond - Justin@dynam.ac" date="03 May 2019" revision="1">Initial Metadata Import from Z-Wave Alliance Database - https://products.z-wavealliance.org/products/677/xml</Entry>
+      <Entry author="Lukasz Winczura - rondoval@gmail.com" date="16 September 2020" revision="1">Initial Metadata Import from Z-Wave Alliance Database - https://products.z-wavealliance.org/Products/2571/XML</Entry>
     </ChangeLog>
   </MetaData>
-  <CommandClass id="112"/>
+  <CommandClass id="112">
+    <Value type="list" index="12" genre="config" label="Calibrate" units="" min="1" max="2" value="1" size="1">
+      <Help>
+      Value describe the calibration status.
+      To enter the calibration mode must first time discalibrate and then calibrate.
+      </Help>
+      <Item label="calibrated" value="1" />
+      <Item label="discalibrated" value="2" />
+    </Value>
+    <Value type="list" index="13" genre="config" label="End Position" units="" min="1" max="2" value="1" size="1">
+      <Help>
+      Value describe the end position of roller shutter.
+      </Help>
+      <Item label="FF go to Max" value="1" />
+      <Item label="FF go to previous position" value="2" />
+    </Value>
+  </CommandClass>
+  <CommandClass id="133">
+    <Associations num_groups="3">
+      <Group index="1" max_associations="1" label="Z-Wave Plus Lifeline" />
+      <Group index="2" max_associations="5" label="Basic Repeat" />
+      <Group index="3" max_associations="5" label="Multilevel Repeat" />
+    </Associations>
+  </CommandClass>
 </Product>
